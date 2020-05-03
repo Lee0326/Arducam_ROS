@@ -122,7 +122,7 @@ int main(int argc, char** argv)
     configCapture(capture0,0);
     configCapture(capture1,1);
 
-    if(capture0.isOpened())
+    if(capture0.isOpened()&&capture1.isOpened())
     {
         synchImages sync;
         Arducam ac0(0,&capture0, &sync);
